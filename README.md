@@ -6,3 +6,6 @@
 
 * Boost.•×‹­‰ï #16 ‘åã LT  
 http://srz-zumix.github.io/slide/iuwandbox/#/  
+
+* ŠÍ‚±‚ê•—ƒe[ƒ}  
+http://srz-zumix.github.io/slide/kancolle/#/  
