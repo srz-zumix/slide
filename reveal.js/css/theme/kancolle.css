@@ -100,7 +100,10 @@ body {
 .reveal h3[data-first-letter], .reveal h3[data-first-letter2],
 .reveal h4[data-first-letter], .reveal h4[data-first-letter2] {
   text-align: left;
-  text-indent: 220px;
+  padding-left: 200px;
+  padding-right: 0.5em;
+  box-sizing: border-box;
+  text-indent: 20px;
 }
 
 .reveal h1:before,
