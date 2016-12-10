@@ -1,0 +1,612 @@
+﻿<!doctype html>
+<html lang="jp">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>なが～いお付き合い Jenkins おじさん - 僕と会社と Jenkins</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="../theme/jenkins-blueocean.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+    <style type="text/css">
+    .motivated {
+      //color: #C4000A;
+      color: #D54C53;
+    }
+    table.icon-list img {
+      width: 1em;
+    }
+    .reveal .conclusion {
+      font-size: 1.52em;
+      text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
+      white-space: nowrap;
+    }
+    </style>
+
+    <!--[if lt IE 9]>
+    <script src="../reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section data-markdown
+          data-separator="\n---\n$"
+          data-separator-vertical="\n--\n"
+          data-attributes="--\s(.*)">
+          <script type="text/template">
+
+# なが～いお付き合い<br />Jenkins おじさん
+
+
+\- 僕と会社と Jenkins <!-- .element style="font-size: 1.4em" -->
+
+---
+
+## アジェンダ
+
+1. 僕と会社と Jenkins
+1. 個人開発での Jenkins
+1. 会社での Jenkins
+1. まとめ
+
+
+---
+
+## 自己紹介
+
+![](https://pbs.twimg.com/profile_images/1373149257/icon_bigger.png)
+[ずみっくす/@srz_zumix](https://twitter.com/srz_zumix)
+
+* ゲーム開発会社勤務。職種は一応プログラマー。  
+適当にやってます。
+* メンドクサイことが大嫌い
+* メンドクサイを楽にするのが大好き
+
+--
+
+### 個人活動
+
+* GitHub: [https://github.com/srz-zumix](https://github.com/srz-zumix)
+* OSDN: [https://osdn.net/users/srz_zumix/](https://osdn.net/users/srz_zumix/)
+
+--
+
+### 個人活動
+
+* [ブログズミ](http://srz-zumix.blogspot.jp/)  
+ブログ。週一更新で適当に書いてます。
+
+[![](images/blog_jenkins.png)](http://srz-zumix.blogspot.jp/)
+
+--
+
+### 会社
+
+![](images/map.PNG)
+
+--
+
+### どんなことしてるの？
+
+* ゲーム開発会社だけど…  
+ゲームを作らないプログラマーです  
+最近は（自称）QAエンジニア
+* Windows アプリケーションとか  
+* ほとんど言えない…
+
+--
+
+### 自己紹介おわり
+
+---
+
+## 僕と会社と Jenkins
+
+--
+
+### ~~Jenkins~~ Hudson との出会い
+
+2010年
+
+* 会社に入ったら知らないおじさんが働いていた
+* 一応管理者になった
+
+![](images/hudson-bust.png) <!-- .element style="width: 20%;" class="noframe" -->
+
+--
+
+### Hudson から Jenkins へ
+
+2011年
+
+* 会社の Hudson も Jenkins へ
+* このころからのめり込み出した
+
+![](images/logo.png) <!-- .element class="noframe" -->
+
+--
+
+### 個人活動の本格化
+
+2011年末
+
+* ブログを開始
+* 趣味プロ開始
+* 個人開発でも Jenkins を使い始めた
+
+--
+
+### かれこれ６年以上
+
+2012年
+
+* 「第２回大阪Jenkins勉強会」参加
+* Jenkins 関連ブログ投稿：12件
+
+<!-- .element style="font-size: 0.75em;" -->
+
+2013年
+
+
+* 「第６回大阪Jenkins勉強会」参加
+* Jenkins 関連ブログ投稿：12件
+
+<!-- .element style="font-size: 0.75em;" -->
+
+2014年
+
+* Jenkins 関連ブログ投稿：10件
+
+<!-- .element style="font-size: 0.75em;" -->
+
+--
+
+### Jenkins おじさんとも・・・
+
+2015年
+
+* Jenkins 関連ブログ投稿：7件
+
+<!-- .element style="font-size: 0.75em;" -->
+
+2016年
+
+* Jekins 2.0 登場
+* 「第７回大阪Jenkins勉強会」参加
+* Jenkins 関連ブログ投稿：15件
+
+<!-- .element style="font-size: 0.75em;" -->
+
+--
+
+### なが～いお付き合いになりました
+
+**タイトル回収**
+
+--
+
+### 今日お話しすること
+
+--
+
+### 技術的なことはブログで
+
+[![](images/blog_jenkins.png)](http://srz-zumix.blogspot.jp/)
+
+--
+
+### 大雑把に感想とかを話します
+
+* 個人開発者として
+* 会社での付き合い
+
+---
+
+## 個人開発での Jenkins
+
+
+--
+
+### 前提
+
+* 個人開発 C++ テスティングフレームワークの事例
+* iutest → [https://github.com/srz-zumix/iutest](https://github.com/srz-zumix/iutest)
+
+--
+
+### 宣伝（iutest とは？）
+
+* C++ Testing Framework
+* OSS (BSD-3-Clause)
+* ヘッダーオンリー
+* Google Test と互換性あり（一部）
+
+--
+
+### 宣伝（iutest とは？）
+
+* 式アサーション
+	+ IUTEST_ASSERT( f() == 42 );
+* より高度なパラメータ生成
+	+ Pairwise
+	+ Concat
+* グルーピング
+* パラメタライズドテストのフィクスチャーの省略
+* 日本語テスト名（C++03）
+
+--
+
+### Testing Framework のテスト
+
+* Testing Framework にもテストが必要！
+* 様々な環境（コンパイラ、OS）の確認が必要
+
+--
+
+### ローカル Jenkins 時代
+
+* ノートパソコンに Jenkins を構築
+* (SVN)コミットをトリガーにビルド・テスト
+* リリース前はコンフィグの組み合わせテスト
+* リリースパッケージの作成
+
+--
+
+### ローカル Jenkins 時代 <!-- .element class="redball" -->
+
+* ノートパソコンを起動してないとテストされない
+* ほぼ Windows 環境の確認のみ
+* 低スペックマシンなので遅い！
+* リリース前テストは1日超えの重量級
+
+--
+
+### CloudBees Jenkins
+
+* Clound on Jenkins!!
+* 無料枠があった（今はない）
+* **いつでもビルド/テストできるようになった** <!-- .element class="success" -->
+
+--
+
+### CloudBees Jenkins <!-- .element class="redball" -->
+
+* ~~時間制限があった~~
+  + ~~長いテストはできなかった~~
+  + ~~何回もキックできなかった~~
+* **無料枠はなくなりました…** <!-- .element class="error" -->  
+
+
+**ローカル Jenkins だけには戻りたくない** <!-- .element class="fragment error" style="font-size: 1.2em" -->
+
+
+--
+
+### CI サービスの利用開始
+
+* より簡単に CI できるようになった
+* OSS なら無料で使えることが多い
+
+--
+
+### iutest が利用しているサービス
+
+||||
+|:-:|:-|:-|
+|![](images/appveyor.png)             |Appveyor |Windows ビルド・テスト、NuGet リリース|
+|![](images/logo-circleci.png)        |Circle CI|ビルド・テスト|
+|![](images/200x200_codeship.png)     |CodeShip |Cpplint、ドキュメント更新、svn commit|
+|![](images/drone-io-logo.png)        |drone.io |（コンパイル時間評価）|
+|![](images/magnum-ci-logo.jpg)       |Magnum CI|Google Native Client|
+|![](images/semaphore-icon.png)       |semaphore|scan-build（clang analyzer）|
+|![](images/shippable-logo-icon.png)  |Shippable|gcc/clang version (+ Wandbox)|
+|![](images/snap-ci-logo.jpeg)        |Snap CI|コンフィグ組み合わせテスト|
+|![](images/travis-ci-logo-face.png)  |Travis CI|ビルド・テスト・Coverity Scan|
+|![](images/wercker_logo_green_32.png)|Wercker|gcc/clang version (+ Wandbox)|
+<!-- .element style="font-size: 0.75em" class="icon-list" -->
+
+--
+
+### iutest が利用しているサービス
+
+バッジつけるのが趣味
+
+![](images/iutest_readme.png)
+
+--
+
+### CI サービス時代
+
+* git push するだけで CI が走り出す
+* 実行速度も自分のノートパソコンより断然速い
+* 静的解析・コードカバレッジもできる
+* やることは…  
+YAML ファイルに設定書く or WEB ページ上で設定
+
+**すごく楽！！** <!-- .element class="fragment success" style="font-size: 1.2em" -->
+
+--
+
+### 無料だと制限がきつくない？ <!-- .element class="questionball" -->
+
+よくある制限
+
+* 時間制限 <!-- .element class="fragment highlight-red" data-fragment-index="1" -->
+* private リポジトリ非対応
+* 並列化が無効
+
+iutest の場合は時間制限がネックだった <!-- .element class="fragment" data-fragment-index="1" -->
+
+--
+
+### Snap CI が解決してくれた
+
+* 複数のステージを連結して  
+パイプライン化する仕組み
+* 時間制限はステージごとにかかる
+* 長いテストでも分割して  
+複数ステージにすれば可能！
+* マニュアル実行にも対応！！
+
+[https://snap-ci.com/](https://snap-ci.com/)
+
+--
+<!-- .element data-background="#000000" -->
+
+### Jenkins はもういらないかも… <!-- .element class="redball" -->
+
+![](images/jenkins-pale-logo.png) <!-- .element class="noframe" -->
+
+--
+
+### Jenkins 2.0 の到来 <!-- .element class="yellowball" -->
+
+![](images/jenkins-20-15-638.jpg)
+
+--
+
+### Jenkins 2.0 の到来
+
+* CI サービスの流れが入ってきた
+* Pipeline プラグイン + Jenkinsfile
+  + **CI とコードが紐付いた** <!-- .element class="success" -->
+
+--
+
+### 参照（第７回大阪Jenkins勉強会）
+
+<iframe src="https://www.slideshare.net/slideshow/embed_code/key/6fdEOlS5DBPCJy" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px; font-size: 0.6em;"> <strong> <a href="https://www.slideshare.net/Posaune/travis-circle-jenkins-20" title="Travis, Circle そして Jenkins 2.0" target="_blank">Travis, Circle そして Jenkins 2.0</a> </strong> from <strong><a target="_blank" href="https://www.slideshare.net/Posaune">Hiroshi Maekawa</a></strong> </div>
+
+<!--
+<div style="margin-bottom:5px; font-size: 0.6em;"> <strong> <a href="https://www.slideshare.net/Posaune/travis-circle-jenkins-20" title="Travis, Circle そして Jenkins 2.0" target="_blank">Travis, Circle そして Jenkins 2.0</a> </strong> from <strong><a target="_blank" href="https://www.slideshare.net/Posaune">Hiroshi Maekawa</a></strong> </div>
+-->
+
+--
+
+### iutestのCI環境としてカムバック？ <!-- .element class="questionball" -->
+
+![](images/logo.png) <!-- .element class="noframe" -->
+
+--
+
+### まだまだ CI サービス優勢 <!-- .element class="redball" -->
+
+* ローカル Jenkins は 2.0 + Pipeline 化
+  + 勉強のため
+  + アクティブなのはリリースパッケージビルドだけ
+* クラウドでCIサービス的にJenkinsを使えないのか？
+  + CloudBees があるけど無料で使えない
+  + 自分が知る限りでは、今のところホスティングしているサービスはなさそう…
+    - OpenShift + Jenkins 2.0 ができそうだけど…
+
+--
+
+### （個人的）結論
+
+Jenkins の今後に期待をしつつも  
+今は CI サービスを選択する方が良い <!-- .element class="conclusion" -->
+
+---
+
+## 会社での Jenkins
+
+--
+
+### まだまだ現役です
+
+--
+
+### なぜ？
+
+* （会社理由により）CIサービスの利用ができない
+  + ソースコードが社内ネットワークから出せない
+  + 無料じゃない（費用対コストは？）
+* Jenkins はタダですぐ、簡単に始められる
+  + **LT の時間内にダウンロードから始めて、  
+  コミットフックでビルドパイプラインを作れるほどに**
+* **開発環境に合わせたカスタマイズがしやすい** <!-- .element class="success" -->
+
+--
+
+### 開発環境に合わせたカスタマイズ
+
+* ゲーム開発は特殊な環境であることが多い
+* プランナー/デザイナー/サウンド/プログラマー   
+色々な職種から自動化したいことが出てくる
+
+--
+
+### 豊富なプラグイン
+
+プラグインを使えばだいたいのことがデキル
+
+![](images/jenkins_plugins_index.png)
+
+[https://plugins.jenkins.io/](https://plugins.jenkins.io/)
+
+--
+
+#### プラグインだけではデキないことも  <!-- .element class="redball" -->
+#### でも Groovy を使うと **なんでもデキル**
+
+--
+
+### やりすぎ注意  <!-- .element class="yellowball" -->
+
+--
+
+### 最強の Jenkins おじさん <!-- .element class="redball" -->
+
+![](images/master-jenkins-weapon.png) <!-- .element class="noframe" -->
+
+ちょっと面倒見切れない…
+
+--
+
+### Jenkins はメンテナンスが面倒 <!-- .element class="redball" -->
+
+メンドクサイことは大嫌いなので
+
+--
+
+### なるべく面倒を減らす
+
+* Jenkins おじさんはプロジェクトに一人
+  + 必要な分だけカスタマイズ
+* アップデート
+  + LTS (Long-Term Support release) を追いかける
+  + 安定したプロジェクトなら、更新しなくてもいい
+* 腐ったら捨てる
+* メンテナスできる人を増やす
+
+--
+
+### メンテナスできる人を増やす
+
+* 安心の提供
+  + 自由な変更を許可する
+  + 壊れてもすぐに戻せるようにしておく
+    - 定期バックアップ
+    - 設定のバージョン管理
+
+--
+
+### メンテナスできる人を増やす
+
+* お手本になる Jenkins が見えるようにする
+* マイ Jenkins
+* Pipeline は使わなくてもいい
+  + GUI でポチポチのほうが気軽
+
+--
+
+### （個人的）結論
+
+消去法的なところはあるものの  
+やっぱり Jenkins は手放せない <!-- .element class="conclusion" -->
+
+---
+
+## まとめ
+
+--
+
+### 結局どっちがいいの？
+
+* ケースバイケース
+* ただ、Jenkins が候補から消えることはない
+  + 候補である以上、  
+  ある程度のことは知っておきたい
+* **Jenkins おじさんとのお付き合いは続く**
+  + 抑えておきたいポイントは？
+
+--
+
+### 抑えておきたいポイント
+
+* 問題が発生したときの対応方法を知る
+  + ログを見る
+  + 言語設定を英語にしてググる
+* Groovy で何ができるか知る
+  + [Jenkins javadoc](http://javadoc.jenkins-ci.org/index.html?jenkins/model/Jenkins.html)
+* とにかくやってみる
+  + マイ Jenkins を実験場として使う
+  + そしてできれば情報共通を…
+
+---
+
+### ご清聴ありがとうございました
+
+<!--
+
+Jenkins 2.0: http://www.slideshare.net/kohsuke/jenkins-20
+Jenkins logo: https://wiki.jenkins-ci.org/display/JENKINS/Logo
+
+-->
+          </script>
+        </section>
+      </div>
+
+    <script src="../reveal.js/lib/js/head.min.js"></script>
+    <script src="../reveal.js/js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        slideNumber: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
