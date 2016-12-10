@@ -1,14 +1,14 @@
-# ”­•\‘—¿
+ï»¿# ç™ºè¡¨è³‡æ–™
 
-•×‹­‰ï‚È‚ñ‚©‚Åg‚Á‚½‘—¿’u‚«êB  
-ŒöŠJ—pB  
+å‹‰å¼·ä¼šãªã‚“ã‹ã§ä½¿ã£ãŸè³‡æ–™ç½®ãå ´ã€‚  
+å…¬é–‹ç”¨ã€‚  
 
-* ‘æ‚W‰ñ‘åãJenkins•×‹­‰ï  
+* ç¬¬ï¼˜å›å¤§é˜ªJenkinså‹‰å¼·ä¼š  
 http://srz-zumix.github.io/slide/jenkinsstudy-o8/#/  
 
 
-* Boost.•×‹­‰ï #16 ‘åã LT  
+* Boost.å‹‰å¼·ä¼š #16 å¤§é˜ª LT  
 http://srz-zumix.github.io/slide/iuwandbox/#/  
 
-* ŠÍ‚±‚ê•—ƒe[ƒ}  
+* è‰¦ã“ã‚Œé¢¨ãƒ†ãƒ¼ãƒ  
 http://srz-zumix.github.io/slide/kancolle/#/  
