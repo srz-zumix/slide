@@ -3,8 +3,8 @@
 
 @font-face {
   font-family: 'League Gothic';
-  src: url("../reveal.js/lib/font/league_gothic-webfont.eot");
-  src: url("../reveal.js/lib/font/league_gothic-webfont.eot?#iefix") format("embedded-opentype"), url("../../lib/font/league_gothic-webfont.woff") format("woff"), url("../../lib/font/league_gothic-webfont.ttf") format("truetype"), url("../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular") format("svg");
+  src: url("../reveal.js/lib/font/league-gothic/league-gothic.eot");
+  src: url("../reveal.js/lib/font/league-gothic/league-gothic.eot?#iefix") format("embedded-opentype"), url("../reveal.js/lib/font/league-gothic/league-gothic.woff") format("woff"), url("../reveal.js/lib/font/league-gothic/league-gothic.ttf") format("truetype"), url("../reveal.js/lib/font/league-gothic/league-gothic.svg#LeagueGothicRegular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
