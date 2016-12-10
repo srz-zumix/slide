@@ -4,7 +4,7 @@
 ŒöŠJ—pB  
 
 * ‘æ‚W‰ñ‘åãJenkins•×‹­‰ï  
-http://srz-zumix.github.io/slide/jenkinsstudy/#/  
+http://srz-zumix.github.io/slide/jenkinsstudy-o8/#/  
 
 
 * Boost.•×‹­‰ï #16 ‘åã LT  
